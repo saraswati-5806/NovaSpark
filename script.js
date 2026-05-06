@@ -1,9 +1,9 @@
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById('navbar');
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.style.background = "#000";
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    navbar.classList.add('scrolled');
   } else {
-    navbar.style.background = "transparent";
+    navbar.classList.remove('scrolled');
   }
 });
